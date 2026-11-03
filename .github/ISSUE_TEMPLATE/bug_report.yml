@@ -1,0 +1,31 @@
+name: Bug report
+description: Report a reproducible problem in Nirman360
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include the page, API endpoint, and steps needed to reproduce the issue.
+      placeholder: |
+        1. Start the backend and frontend
+        2. Open ...
+        3. Select ...
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, browser, Python version, and Node.js version.
+    validations:
+      required: true
